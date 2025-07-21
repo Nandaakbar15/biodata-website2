@@ -1,112 +1,266 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Profil</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Halaman Profil</title>
+  <!-- <link rel="stylesheet" href="style.css" /> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
-    <!-- Section 1: Menu -->
-  <header>
-    <div><strong>Brand</strong></div>
-    <nav>
-      <a href="#hero">Header</a>
-      <a href="#about">Biodata</a>
-      <a href="#portfolio">Portofolio</a>
-    </nav>
+  <!-- Section 1: Menu -->
+  <header class="bg-dark text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <strong class="fs-4">Brand</strong>
+      <nav>
+        <a href="#hero" class="text-white me-3">Header</a>
+        <a href="#about" class="text-white me-3">Biodata</a>
+        <a href="#portfolio" class="text-white">Portofolio</a>
+      </nav>
+    </div>
   </header>
 
   <!-- Section 2: Header dengan Gambar -->
-  <section class="hero" id="hero">
-    <div class="hero-text">
-      <h1>Selamat Datang di Website Saya</h1>
-      <p>Ini adalah website portofolio saya</p>
-      <a href="#">Pelajari Lebih Lanjut</a>
+  <section class="hero py-5 bg-light" id="hero">
+    <div class="container d-flex flex-wrap align-items-center justify-content-between">
+      <div class="col-md-6">
+        <h1 class="display-5 fw-bold">Selamat Datang di Website Saya</h1>
+        <p class="lead">Ini adalah website portofolio saya</p>
+        <a href="#about" class="btn btn-primary">Pelajari Lebih Lanjut</a>
+      </div>
+      <div class="col-md-5 mt-4 mt-md-0">
+        <img src="img/Foto profil.jpg" alt="My profile" class="img-fluid rounded shadow" />
+      </div>
     </div>
-    <img src="img/Foto profil.jpg" alt="My profile">
   </section>
 
   <!-- Section 3: Biodata -->
-  <section class="about" id="about">
-    <h2>About Me</h2>
-    <p>A brief introduction about myself</p>
-    <div class="bio-grid">
-      <div class="bio-box">
-        <h2>Nama</h2>
-        <p>Al-Vinda Akbar Geannasech</p>
-      </div>
-      <div class="bio-box">
-        <h2>Pendidikan</h2>
-        <p>Sarjana Diploma-4 Teknik Informatika</p>
-      </div>
-      <div class="bio-box">
-        <h2>Pekerjaan</h2>
-        <p>Web Developer</p>
-      </div>
-      <div class="bio-box">
-        <h2>Contact</h2>
-        <p>081818132011</p>
-      </div>
-      <div class="bio-box">
-        <h2>Hobi</h2>
-        <p>Ngoding, Nonton Anime, Baca Manga, Gaming</p>
-      </div>
-      <div class="bio-box">
-        <h2>Alamat</h2>
-        <p>JL. Kavling Grand Terra Blok B4, Ciawitali, Kec. Citereup, Kota Cimahi, Jawa Barat</p>
+  <section class="about py-5" id="about">
+    <div class="container">
+      <h2 class="mb-4">About Me</h2>
+      <p class="mb-4">A brief introduction about myself</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="border p-3 rounded shadow-sm h-100">
+            <h5>Nama</h5>
+            <p>Al-Vinda Akbar Geannasech</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="border p-3 rounded shadow-sm h-100">
+            <h5>Pendidikan</h5>
+            <p>Sarjana Diploma-4 Teknik Informatika</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="border p-3 rounded shadow-sm h-100">
+            <h5>Pekerjaan</h5>
+            <p>Web Developer</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="border p-3 rounded shadow-sm h-100">
+            <h5>Contact</h5>
+            <p>081818132011</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="border p-3 rounded shadow-sm h-100">
+            <h5>Hobi</h5>
+            <p>Ngoding, Nonton Anime, Baca Manga, Gaming</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="border p-3 rounded shadow-sm h-100">
+            <h5>Alamat</h5>
+            <p>JL. Kavling Grand Terra Blok B4, Ciawitali, Cimahi, Jawa Barat</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Section 4: Portofolio -->
-  <section class="portfolio" id="portfolio">
-    <h2>Portofolio</h2>
-    <div class="portfolio-grid">
-      <div class="card">
-        <img src="img/Screenshot project Animeku Website.PNG" alt="Proyek 1">
-        <h3>AnimeKu Website</h3>
-        <p>Membuat website list anime dengan menggunakan Express.js</p>
-        <a href="https://github.com/Nandaakbar15/AnimeKuWebsite.git">Repository</a>
-      </div>
-      <div class="card">
-        <img src="img/Screenshot project Tatsuya Mangashop website.PNG" alt="Proyek 2">
-        <h3>Website Tatsuya Mangashop</h3>
-        <p>Membuat website list manga dengan menggunakan Express.js dan Node.js</p>
-        <a href="https://github.com/Nandaakbar15/manga-shop-app.git">Repository</a>
-      </div>
-      <div class="card">
-        <img src="img/Screenshot project website Aizawa gamerstore.PNG" alt="Proyek 3">
-        <h3>Website Aizawa Gamerstore</h3>
-        <p>Wesbite E-Commerce toko game dengan menggunakan React.js, Bootstrap dan Express.js</p>
-        <a href="https://github.com/Nandaakbar15/aizawagamersniastore.git">Repository</a>
-      </div>
-      <div class="card">
-        <img src="img/Screenshot project Website Toko Buku.PNG" alt="Proyek 4">
-        <h3>Website Toko Buku</h3>
-        <p>Wesbite Toko Buku dengan menggunakan React.js, Bootstrap dan Express.js</p>
-        <a href="https://github.com/Nandaakbar15/website-tokobuku">Repository</a>
-      </div>
-      <div class="card">
-        <img src="img/Screenshot project Ps Go.png" alt="Proyek 5">
-        <h3>Aplikasi mengelola, sewa, booking atau rental PS berbasis website</h3>
-        <p>Website mengelola atau booking Playstation menggunakan React.js, Bootstrap dan Laravel</p>
-        <a href="https://github.com/Nandaakbar15/PsGo-frontend">Repository</a>
-      </div>
-      <div class="card">
-        <img src="img/Screenshot project Tugas Akhir.jpg" alt="Proyek 5">
-        <h3>Tugas Akhir Servis Playstation berbasis website</h3>
-        <p>Project Tugas Akhir berbasis website yang mengelola servis playstation dan pembayaran menggunakan Midtrans</p>
-        <a href="https://github.com/Nandaakbar15/tugasakhir_laravel.git">Repository</a>
+  <section class="portfolio py-5 bg-light" id="portfolio">
+    <div class="container">
+      <h2 class="mb-4">Portofolio</h2>
+      <div class="row g-4">
+        <!-- Kartu Portofolio -->
+        <!-- Ulangi blok ini untuk setiap proyek -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="img/Screenshot project Animeku Website.PNG" class="card-img-top" alt="Proyek 1" />
+            <div class="card-body">
+              <h5 class="card-title">AnimeKu Website</h5>
+              <p class="card-text">Website list anime menggunakan Express.js</p>
+              <a href="https://github.com/Nandaakbar15/AnimeKuWebsite.git" class="btn btn-sm btn-outline-primary">Repository</a>
+              <button class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#modal1">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contoh lainnya -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="img/Screenshot project Ps Go.png" class="card-img-top" alt="Proyek PsGo" />
+            <div class="card-body">
+              <h5 class="card-title">PsGo App</h5>
+              <p class="card-text">Booking Playstation berbasis Laravel + React</p>
+              <a href="https://github.com/Nandaakbar15/PsGo-frontend" class="btn btn-sm btn-outline-primary">Repository</a>
+              <button class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#modal2">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="img/Screenshot project website Aizawa gamerstore.PNG" class="card-img-top" alt="Proyek Aizawa Gamerstore website" />
+            <div class="card-body">
+              <h5 class="card-title">Aizawa Gamestore</h5>
+              <p class="card-text">Website e-commerce biasa menggunakan React.JS dan Express.js</p>
+              <a href="https://github.com/Nandaakbar15/aizawagamersniastore" class="btn btn-sm btn-outline-primary">Repository</a>
+              <button class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#modal3">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="img/Screenshot project website CV Gilang Kencana Mulya.PNG" class="card-img-top" alt="Proyek Website Company Profile" />
+            <div class="card-body">
+              <h5 class="card-title">CV. Gilang Kencana Mulya website</h5>
+              <p class="card-text">Website company profile berbasis Laravel</p>
+              <a href="https://github.com/Nandaakbar15/cv-gilang-kencana-website.git" class="btn btn-sm btn-outline-primary">Repository</a>
+              <button class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#modal4">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="img/Screenshot project Tugas Akhir.jpg" class="card-img-top" alt="Proyek Website Company Profile" />
+            <div class="card-body">
+              <h5 class="card-title">Tugas Akhir Servis Playstation berbasis website</h5>
+              <p class="card-text">Aplikasi servis Playstation berbasis Laravel</p>
+              <a href="https://github.com/Nandaakbar15/tugasakhir_laravel.git" class="btn btn-sm btn-outline-primary">Repository</a>
+              <button class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#modal5">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <img src="img/Screenshot project Website Toko Buku.PNG" class="card-img-top" alt="Proyek Website Company Profile" />
+            <div class="card-body">
+              <h5 class="card-title">Website Toko Buku</h5>
+              <p class="card-text">Aplikasi toko buku berbasis website</p>
+              <a href="https://github.com/Nandaakbar15/website-tokobuku" class="btn btn-sm btn-outline-primary">Repository</a>
+              <button class="btn btn-sm btn-primary ms-2" data-bs-toggle="modal" data-bs-target="#modal6">Lihat Detail</button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2025 Al-Vinda Akbar</p>
+  <!-- Modal 1 -->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label">AnimeKu Website</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Website list anime buatan pribadi menggunakan Express.js, Axios, dan template HTML untuk menampilkan daftar anime berdasarkan kategori.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal2Label">PsGo App</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Aplikasi penyewaan dan booking PS berbasis Laravel & React, dilengkapi dengan dashboard admin dan sistem pemesanan.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3 -->
+  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal3Label">Aizawa Gamerstore</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+         Website E-commerce penjualan konsol dan game sederhana dengan menggunakan React.js, Express.js dan MySQL
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 4 -->
+  <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal4Label">Website Company Profil CV. Gilang Kencana Mulya</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Website company profile yang mencakup profil perusahaan, data dan informasi perusahaan dengan menggunakan Laravel dan bootstrap
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 5 -->
+   <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal4Label">Website Perbaikan Playstation Berbasis Website</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Aplikasi Jasa perbaikan atau servis Playstation berbasis website dengan menggunakan Laravel, Bootstrap dan MySQL
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal4Label">Aplikasi Toko Buku berbasis website</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Aplikasi Toko Buku berbasis website dengan menggunakan React.js, Express.js dan MySQL
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">© 2025 Al-Vinda Akbar</p>
   </footer>
-    
 
 </body>
 </html>
